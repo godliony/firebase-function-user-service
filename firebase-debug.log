@@ -1,0 +1,327 @@
+[debug] [2022-08-21T12:35:49.400Z] ----------------------------------------------------------------------
+[debug] [2022-08-21T12:35:49.402Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-08-21T12:35:49.403Z] CLI Version:   11.7.0
+[debug] [2022-08-21T12:35:49.403Z] Platform:      win32
+[debug] [2022-08-21T12:35:49.403Z] Node Version:  v16.15.1
+[debug] [2022-08-21T12:35:49.404Z] Time:          Sun Aug 21 2022 19:35:49 GMT+0700 (Indochina Time)
+[debug] [2022-08-21T12:35:49.405Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-21T12:35:49.490Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-21T12:35:49.490Z] > authorizing via signed-in user (nattavat.farmimg.tech@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-08-21T12:35:49.519Z] [hub] writing locator at C:\Users\HOME\AppData\Local\Temp\hub-iot-farming-d73b7.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, eventarc\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-21T12:35:49.572Z] defaultcredentials: writing to file C:\Users\HOME\AppData\Roaming\firebase\nattavat_farmimg.tech_gmail.com_application_default_credentials.json
+[debug] [2022-08-21T12:35:49.578Z] Setting GAC to C:\Users\HOME\AppData\Roaming\firebase\nattavat_farmimg.tech_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HOME\\AppData\\Roaming\\firebase\\nattavat_farmimg.tech_gmail.com_application_default_credentials.json"}}
+[debug] [2022-08-21T12:35:49.580Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/iot-farming-d73b7/adminSdkConfig [none]
+[debug] [2022-08-21T12:35:50.053Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/iot-farming-d73b7/adminSdkConfig 200
+[debug] [2022-08-21T12:35:50.054Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/iot-farming-d73b7/adminSdkConfig {"projectId":"iot-farming-d73b7","storageBucket":"iot-farming-d73b7.appspot.com","locationId":"asia-southeast1"}
+[debug] [2022-08-21T12:35:50.119Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-21T12:35:50.119Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-21T12:35:50.119Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\HOME\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\HOME\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-21T12:35:50.273Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\HOME\Documents\Tutorial_Project\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\HOME\\Documents\\Tutorial_Project\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-21T12:35:50.399Z] Validating nodejs source
+[debug] [2022-08-21T12:35:51.325Z] checkFunctionsSDKVersion encountered error:Invalid Version:  {}
+[debug] [2022-08-21T12:35:51.326Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-21T12:35:51.326Z] Building nodejs source
+[debug] [2022-08-21T12:35:51.326Z] Analyzing nodejs backend spec
+[debug] [2022-08-21T12:35:52.871Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] +  functions[asia-southeast1-app]: http function initialized (http://localhost:5001/iot-farming-d73b7/asia-southeast1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/iot-farming-d73b7/asia-southeast1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-08-21T12:36:32.806Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-21T12:36:32.807Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-21T12:36:32.808Z] Accepted request POST /iot-farming-d73b7/asia-southeast1/app/user --> asia-southeast1-app
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-08-21T12:36:32.828Z] [worker-pool] addWorker(asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(asia-southeast1-app)"}}
+[debug] [2022-08-21T12:36:32.829Z] [worker-pool] Adding worker with key asia-southeast1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key asia-southeast1-app, total=1"}}
+[debug] [2022-08-21T12:36:32.829Z] [worker-pool] submitWork(triggerId=asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=asia-southeast1-app)"}}
+[debug] [2022-08-21T12:36:32.830Z] [worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: BUSY"}}
+[debug] [2022-08-21T12:36:34.619Z] [runtime-status] [12968] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:36:34.621Z] [runtime-status] [12968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:36:34.622Z] [runtime-status] [12968] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-21T12:36:34.623Z] [runtime-status] [12968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:36:34.688Z] [runtime-status] [12968] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-21T12:36:34.689Z] [runtime-status] [12968] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-21T12:36:34.690Z] [runtime-status] [12968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:36:34.692Z] [runtime-status] [12968] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:36:34.694Z] [runtime-status] [12968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:36:34.694Z] [runtime-status] [12968] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-21T12:36:34.694Z] [runtime-status] [12968] Functions runtime initialized. {"cwd":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-08-21T12:36:35.054Z] [runtime-status] [12968] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"iot-farming-d73b7","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2/nOGfzNpw9mJ\nI5vh49n+j3tM1gfK6ZrJLmg4PIdrFulXI8Vd0Wr5zCvAwazSsyF0Ws4B+n0+sP8V\nE7k+NgGovH6RbEjq/Oh09We0NS+GFtV/GY03xBUwcWHQJ++Fcfty3BjQIYGpdBqf\n6yR+tLqwhrcFcGzTJadwyaZh9twUMsznbH678DLgIXMLWxqnZBLJtovECGgLJMJm\nKTiD0pPtbo6AHmAJpN1vzWU5soxZIjFGhaVaEwvmJgbQCLILEIAYrltO8SefDT7c\n2QgM0zypyGDY61Rpy77kANUgLnU1OEoyAp78IUSBViDIbzPJGrir3uGN6SMvr18x\nfgDyEQh9AgMBAAECggEABQAfBcFIp4WDsfqF+2LPs1GoaXbPyyFnDx8rPDB0Yt55\n+wHk8aWmM0ZpAoW2DZB51iCy0G+ZA2oeMuQag8VBdlnLsnkLCaDUK54EjSk9whH7\nYUEuEG3DRneb2BMtArCCrV1mVMCDW68z9DGed/foVF8jLJ9ybCBg/4dw1aNV2WCL\n3yehV4ZPGHdhDNs6CwBBCxo4f70Ce04pF06QcpW/kyKDMi36m+JVNYIYR0ROawea\nNx9vGaVvHdbUhVCa15qzLeuN/KTHGI4vlNLPDd8NgTHZnRoBfb2dwa0tzBVCsSnZ\n/8IjlliWTkrklRRUra0Ps2r65iUGQqOgrwjivMIm4QKBgQDinFvsRvA0dlStko9Q\n17VQDNx9hTHFLArXXvsg23epMmRtwY5FNAGLxEUFZemq9gaJWT4hPx1KqnIoHHJs\nXS++VmowW568aMe76oD341blpYsJTXLlqTSfVB2g/NqSbLCUNdERWRRVsj/Fjj9p\noPhyIeRioZ/CLvumqb1e3opn3wKBgQDOufttKo2rRRivTTfu0p8nDo9e/ydZow2G\n6vdmEvdxYlu5ekUWUhKUrJzJAYa4UB0HriV2ZCejCDU/eipDMuKlaERtFjbtoqW3\ncrzMRDjgNijYl9v2Yp35mRtQjBm88YozDzTVH5hGiP5rkXV15eJIblAD6IpCqgJ6\n4toHYBnLIwKBgGQmfmm6IEbPVTUw5K3x52vtgzTmPMzLXi85BvvKguQAJWpsdJgZ\nF+XRZD+yfsbT3KevDUpcPnHVSoZ3rApAVO1l+6BLnaffFwbx6PWlP65Wr0/5LqJZ\nWaxg3IdduKul5ZRbBH8KQ3ZsRMrmxxfD0ImAeRMuIxEK+qT5t3vKFpk5AoGAQa4J\nWffJJv8/BoNMIA6/DhOsLYx3nh0V8SW6EK45+8Y6SkW0qZDN4nqtHZfki664anZD\n5MeRaFT1RgO0ZcFHDTKBev8x2HJyoEROA8AxKdtLQvWMp01Rz7l7Wi4JB2TeebZ9\nHLF7Gf3wh5ChdyHgsQ6LUZKSSvfk7dIhX3KC/20CgYEAuVvQrAe9pK0mlZTq2/r8\nr8Bra2fcMVlcOBX7ndotL5o0R8AqQ4tB+cOu9/a3zI5nKHegrFjs+uSxeyYuJMdw\ncyu9gNH4NrCuc6B5CXxi0sWwE72KD2OPdt0W5PKy8sqXp49pMCuCFv5htN8CpuGR\nWpltIFosRnjVsxyb27xVf0A=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-ax41n@iot-farming-d73b7.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"iot-farming-d73b7\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2/nOGfzNpw9mJ\\nI5vh49n+j3tM1gfK6ZrJLmg4PIdrFulXI8Vd0Wr5zCvAwazSsyF0Ws4B+n0+sP8V\\nE7k+NgGovH6RbEjq/Oh09We0NS+GFtV/GY03xBUwcWHQJ++Fcfty3BjQIYGpdBqf\\n6yR+tLqwhrcFcGzTJadwyaZh9twUMsznbH678DLgIXMLWxqnZBLJtovECGgLJMJm\\nKTiD0pPtbo6AHmAJpN1vzWU5soxZIjFGhaVaEwvmJgbQCLILEIAYrltO8SefDT7c\\n2QgM0zypyGDY61Rpy77kANUgLnU1OEoyAp78IUSBViDIbzPJGrir3uGN6SMvr18x\\nfgDyEQh9AgMBAAECggEABQAfBcFIp4WDsfqF+2LPs1GoaXbPyyFnDx8rPDB0Yt55\\n+wHk8aWmM0ZpAoW2DZB51iCy0G+ZA2oeMuQag8VBdlnLsnkLCaDUK54EjSk9whH7\\nYUEuEG3DRneb2BMtArCCrV1mVMCDW68z9DGed/foVF8jLJ9ybCBg/4dw1aNV2WCL\\n3yehV4ZPGHdhDNs6CwBBCxo4f70Ce04pF06QcpW/kyKDMi36m+JVNYIYR0ROawea\\nNx9vGaVvHdbUhVCa15qzLeuN/KTHGI4vlNLPDd8NgTHZnRoBfb2dwa0tzBVCsSnZ\\n/8IjlliWTkrklRRUra0Ps2r65iUGQqOgrwjivMIm4QKBgQDinFvsRvA0dlStko9Q\\n17VQDNx9hTHFLArXXvsg23epMmRtwY5FNAGLxEUFZemq9gaJWT4hPx1KqnIoHHJs\\nXS++VmowW568aMe76oD341blpYsJTXLlqTSfVB2g/NqSbLCUNdERWRRVsj/Fjj9p\\noPhyIeRioZ/CLvumqb1e3opn3wKBgQDOufttKo2rRRivTTfu0p8nDo9e/ydZow2G\\n6vdmEvdxYlu5ekUWUhKUrJzJAYa4UB0HriV2ZCejCDU/eipDMuKlaERtFjbtoqW3\\ncrzMRDjgNijYl9v2Yp35mRtQjBm88YozDzTVH5hGiP5rkXV15eJIblAD6IpCqgJ6\\n4toHYBnLIwKBgGQmfmm6IEbPVTUw5K3x52vtgzTmPMzLXi85BvvKguQAJWpsdJgZ\\nF+XRZD+yfsbT3KevDUpcPnHVSoZ3rApAVO1l+6BLnaffFwbx6PWlP65Wr0/5LqJZ\\nWaxg3IdduKul5ZRbBH8KQ3ZsRMrmxxfD0ImAeRMuIxEK+qT5t3vKFpk5AoGAQa4J\\nWffJJv8/BoNMIA6/DhOsLYx3nh0V8SW6EK45+8Y6SkW0qZDN4nqtHZfki664anZD\\n5MeRaFT1RgO0ZcFHDTKBev8x2HJyoEROA8AxKdtLQvWMp01Rz7l7Wi4JB2TeebZ9\\nHLF7Gf3wh5ChdyHgsQ6LUZKSSvfk7dIhX3KC/20CgYEAuVvQrAe9pK0mlZTq2/r8\\nr8Bra2fcMVlcOBX7ndotL5o0R8AqQ4tB+cOu9/a3zI5nKHegrFjs+uSxeyYuJMdw\\ncyu9gNH4NrCuc6B5CXxi0sWwE72KD2OPdt0W5PKy8sqXp49pMCuCFv5htN8CpuGR\\nWpltIFosRnjVsxyb27xVf0A=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-ax41n@iot-farming-d73b7.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2022-08-21T12:36:35.099Z] [runtime-status] [12968] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-08-21T12:36:35.102Z] [runtime-status] [12968] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Running app in signature http"}}
+[debug] [2022-08-21T12:36:35.112Z] [runtime-status] [12968] Listening to port: \\?\pipe\fire_emu_c798eff2098ae0b2 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Listening to port: \\\\?\\pipe\\fire_emu_c798eff2098ae0b2"}}
+[debug] [2022-08-21T12:36:35.152Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-21T12:36:35.152Z] [functions] Got req.url=/iot-farming-d73b7/asia-southeast1/app/user, mapping to path=/user {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/iot-farming-d73b7/asia-southeast1/app/user, mapping to path=/user"}}
+[debug] [2022-08-21T12:36:35.167Z] [runtime-status] [12968] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Ephemeral server handling POST request"}}
+[debug] [2022-08-21T12:36:35.173Z] [runtime-status] [12968] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-08-21T12:36:35.175Z] [worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: IDLE"}}
+[debug] [2022-08-21T12:36:35.175Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-21T12:37:18.110Z] File C:\Users\HOME\Documents\Tutorial_Project\functions\controllers\UserController.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HOME\\Documents\\Tutorial_Project\\functions\\controllers\\UserController.js changed, reloading triggers"}}
+[debug] [2022-08-21T12:37:19.111Z] Validating nodejs source
+[debug] [2022-08-21T12:37:20.043Z] checkFunctionsSDKVersion encountered error:Invalid Version:  {}
+[debug] [2022-08-21T12:37:20.044Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-21T12:37:20.044Z] Building nodejs source
+[debug] [2022-08-21T12:37:20.044Z] Analyzing nodejs backend spec
+[debug] [2022-08-21T12:37:21.688Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[debug] [2022-08-21T12:37:22.096Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-21T12:37:22.097Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-21T12:37:22.097Z] Accepted request POST /iot-farming-d73b7/asia-southeast1/app/user --> asia-southeast1-app
+[debug] [2022-08-21T12:37:22.097Z] [worker-pool] submitWork(triggerId=asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=asia-southeast1-app)"}}
+[debug] [2022-08-21T12:37:22.097Z] [worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: BUSY"}}
+[debug] [2022-08-21T12:37:22.098Z] [runtime-status] [12968] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-08-21T12:37:22.099Z] [runtime-status] [12968] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Running app in signature http"}}
+[debug] [2022-08-21T12:37:22.100Z] [runtime-status] [12968] Listening to port: \\?\pipe\fire_emu_c798eff2098ae0b2 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Listening to port: \\\\?\\pipe\\fire_emu_c798eff2098ae0b2"}}
+[debug] [2022-08-21T12:37:22.218Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-21T12:37:22.218Z] [functions] Got req.url=/iot-farming-d73b7/asia-southeast1/app/user, mapping to path=/user {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/iot-farming-d73b7/asia-southeast1/app/user, mapping to path=/user"}}
+[debug] [2022-08-21T12:37:22.221Z] [runtime-status] [12968] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Ephemeral server handling POST request"}}
+[debug] [2022-08-21T12:37:22.222Z] [runtime-status] [12968] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [12968] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-08-21T12:37:22.224Z] [worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: IDLE"}}
+[debug] [2022-08-21T12:37:22.224Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-08-21T12:37:22.314Z] [worker-pool] Shutting down IDLE worker (asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (asia-southeast1-app)"}}
+[debug] [2022-08-21T12:37:22.314Z] [worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: FINISHING"}}
+[debug] [2022-08-21T12:37:22.325Z] [worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: exited"}}
+[debug] [2022-08-21T12:37:22.325Z] [worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-fb2fac2e-4d5d-4868-9a5b-92ea805cef3c]: FINISHED"}}
+[debug] [2022-08-21T12:37:24.344Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-21T12:37:24.344Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-21T12:37:24.345Z] Accepted request POST /iot-farming-d73b7/asia-southeast1/app/user --> asia-southeast1-app
+[debug] [2022-08-21T12:37:24.345Z] [worker-pool] Cleaned up workers for asia-southeast1-app: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for asia-southeast1-app: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-08-21T12:37:24.358Z] [worker-pool] addWorker(asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(asia-southeast1-app)"}}
+[debug] [2022-08-21T12:37:24.358Z] [worker-pool] Adding worker with key asia-southeast1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key asia-southeast1-app, total=1"}}
+[debug] [2022-08-21T12:37:24.358Z] [worker-pool] submitWork(triggerId=asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=asia-southeast1-app)"}}
+[debug] [2022-08-21T12:37:24.359Z] [worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: BUSY"}}
+[debug] [2022-08-21T12:37:26.239Z] [runtime-status] [8308] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:37:26.242Z] [runtime-status] [8308] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:37:26.243Z] [runtime-status] [8308] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-21T12:37:26.244Z] [runtime-status] [8308] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:37:26.308Z] [runtime-status] [8308] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-21T12:37:26.309Z] [runtime-status] [8308] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-21T12:37:26.310Z] [runtime-status] [8308] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:37:26.312Z] [runtime-status] [8308] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:37:26.313Z] [runtime-status] [8308] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:37:26.313Z] [runtime-status] [8308] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-21T12:37:26.313Z] [runtime-status] [8308] Functions runtime initialized. {"cwd":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-08-21T12:37:26.685Z] [runtime-status] [8308] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"iot-farming-d73b7","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2/nOGfzNpw9mJ\nI5vh49n+j3tM1gfK6ZrJLmg4PIdrFulXI8Vd0Wr5zCvAwazSsyF0Ws4B+n0+sP8V\nE7k+NgGovH6RbEjq/Oh09We0NS+GFtV/GY03xBUwcWHQJ++Fcfty3BjQIYGpdBqf\n6yR+tLqwhrcFcGzTJadwyaZh9twUMsznbH678DLgIXMLWxqnZBLJtovECGgLJMJm\nKTiD0pPtbo6AHmAJpN1vzWU5soxZIjFGhaVaEwvmJgbQCLILEIAYrltO8SefDT7c\n2QgM0zypyGDY61Rpy77kANUgLnU1OEoyAp78IUSBViDIbzPJGrir3uGN6SMvr18x\nfgDyEQh9AgMBAAECggEABQAfBcFIp4WDsfqF+2LPs1GoaXbPyyFnDx8rPDB0Yt55\n+wHk8aWmM0ZpAoW2DZB51iCy0G+ZA2oeMuQag8VBdlnLsnkLCaDUK54EjSk9whH7\nYUEuEG3DRneb2BMtArCCrV1mVMCDW68z9DGed/foVF8jLJ9ybCBg/4dw1aNV2WCL\n3yehV4ZPGHdhDNs6CwBBCxo4f70Ce04pF06QcpW/kyKDMi36m+JVNYIYR0ROawea\nNx9vGaVvHdbUhVCa15qzLeuN/KTHGI4vlNLPDd8NgTHZnRoBfb2dwa0tzBVCsSnZ\n/8IjlliWTkrklRRUra0Ps2r65iUGQqOgrwjivMIm4QKBgQDinFvsRvA0dlStko9Q\n17VQDNx9hTHFLArXXvsg23epMmRtwY5FNAGLxEUFZemq9gaJWT4hPx1KqnIoHHJs\nXS++VmowW568aMe76oD341blpYsJTXLlqTSfVB2g/NqSbLCUNdERWRRVsj/Fjj9p\noPhyIeRioZ/CLvumqb1e3opn3wKBgQDOufttKo2rRRivTTfu0p8nDo9e/ydZow2G\n6vdmEvdxYlu5ekUWUhKUrJzJAYa4UB0HriV2ZCejCDU/eipDMuKlaERtFjbtoqW3\ncrzMRDjgNijYl9v2Yp35mRtQjBm88YozDzTVH5hGiP5rkXV15eJIblAD6IpCqgJ6\n4toHYBnLIwKBgGQmfmm6IEbPVTUw5K3x52vtgzTmPMzLXi85BvvKguQAJWpsdJgZ\nF+XRZD+yfsbT3KevDUpcPnHVSoZ3rApAVO1l+6BLnaffFwbx6PWlP65Wr0/5LqJZ\nWaxg3IdduKul5ZRbBH8KQ3ZsRMrmxxfD0ImAeRMuIxEK+qT5t3vKFpk5AoGAQa4J\nWffJJv8/BoNMIA6/DhOsLYx3nh0V8SW6EK45+8Y6SkW0qZDN4nqtHZfki664anZD\n5MeRaFT1RgO0ZcFHDTKBev8x2HJyoEROA8AxKdtLQvWMp01Rz7l7Wi4JB2TeebZ9\nHLF7Gf3wh5ChdyHgsQ6LUZKSSvfk7dIhX3KC/20CgYEAuVvQrAe9pK0mlZTq2/r8\nr8Bra2fcMVlcOBX7ndotL5o0R8AqQ4tB+cOu9/a3zI5nKHegrFjs+uSxeyYuJMdw\ncyu9gNH4NrCuc6B5CXxi0sWwE72KD2OPdt0W5PKy8sqXp49pMCuCFv5htN8CpuGR\nWpltIFosRnjVsxyb27xVf0A=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-ax41n@iot-farming-d73b7.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"iot-farming-d73b7\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2/nOGfzNpw9mJ\\nI5vh49n+j3tM1gfK6ZrJLmg4PIdrFulXI8Vd0Wr5zCvAwazSsyF0Ws4B+n0+sP8V\\nE7k+NgGovH6RbEjq/Oh09We0NS+GFtV/GY03xBUwcWHQJ++Fcfty3BjQIYGpdBqf\\n6yR+tLqwhrcFcGzTJadwyaZh9twUMsznbH678DLgIXMLWxqnZBLJtovECGgLJMJm\\nKTiD0pPtbo6AHmAJpN1vzWU5soxZIjFGhaVaEwvmJgbQCLILEIAYrltO8SefDT7c\\n2QgM0zypyGDY61Rpy77kANUgLnU1OEoyAp78IUSBViDIbzPJGrir3uGN6SMvr18x\\nfgDyEQh9AgMBAAECggEABQAfBcFIp4WDsfqF+2LPs1GoaXbPyyFnDx8rPDB0Yt55\\n+wHk8aWmM0ZpAoW2DZB51iCy0G+ZA2oeMuQag8VBdlnLsnkLCaDUK54EjSk9whH7\\nYUEuEG3DRneb2BMtArCCrV1mVMCDW68z9DGed/foVF8jLJ9ybCBg/4dw1aNV2WCL\\n3yehV4ZPGHdhDNs6CwBBCxo4f70Ce04pF06QcpW/kyKDMi36m+JVNYIYR0ROawea\\nNx9vGaVvHdbUhVCa15qzLeuN/KTHGI4vlNLPDd8NgTHZnRoBfb2dwa0tzBVCsSnZ\\n/8IjlliWTkrklRRUra0Ps2r65iUGQqOgrwjivMIm4QKBgQDinFvsRvA0dlStko9Q\\n17VQDNx9hTHFLArXXvsg23epMmRtwY5FNAGLxEUFZemq9gaJWT4hPx1KqnIoHHJs\\nXS++VmowW568aMe76oD341blpYsJTXLlqTSfVB2g/NqSbLCUNdERWRRVsj/Fjj9p\\noPhyIeRioZ/CLvumqb1e3opn3wKBgQDOufttKo2rRRivTTfu0p8nDo9e/ydZow2G\\n6vdmEvdxYlu5ekUWUhKUrJzJAYa4UB0HriV2ZCejCDU/eipDMuKlaERtFjbtoqW3\\ncrzMRDjgNijYl9v2Yp35mRtQjBm88YozDzTVH5hGiP5rkXV15eJIblAD6IpCqgJ6\\n4toHYBnLIwKBgGQmfmm6IEbPVTUw5K3x52vtgzTmPMzLXi85BvvKguQAJWpsdJgZ\\nF+XRZD+yfsbT3KevDUpcPnHVSoZ3rApAVO1l+6BLnaffFwbx6PWlP65Wr0/5LqJZ\\nWaxg3IdduKul5ZRbBH8KQ3ZsRMrmxxfD0ImAeRMuIxEK+qT5t3vKFpk5AoGAQa4J\\nWffJJv8/BoNMIA6/DhOsLYx3nh0V8SW6EK45+8Y6SkW0qZDN4nqtHZfki664anZD\\n5MeRaFT1RgO0ZcFHDTKBev8x2HJyoEROA8AxKdtLQvWMp01Rz7l7Wi4JB2TeebZ9\\nHLF7Gf3wh5ChdyHgsQ6LUZKSSvfk7dIhX3KC/20CgYEAuVvQrAe9pK0mlZTq2/r8\\nr8Bra2fcMVlcOBX7ndotL5o0R8AqQ4tB+cOu9/a3zI5nKHegrFjs+uSxeyYuJMdw\\ncyu9gNH4NrCuc6B5CXxi0sWwE72KD2OPdt0W5PKy8sqXp49pMCuCFv5htN8CpuGR\\nWpltIFosRnjVsxyb27xVf0A=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-ax41n@iot-farming-d73b7.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2022-08-21T12:37:26.732Z] [runtime-status] [8308] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-08-21T12:37:26.733Z] [runtime-status] [8308] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Running app in signature http"}}
+[debug] [2022-08-21T12:37:26.741Z] [runtime-status] [8308] Listening to port: \\?\pipe\fire_emu_11b3c8b056d3b190 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Listening to port: \\\\?\\pipe\\fire_emu_11b3c8b056d3b190"}}
+[debug] [2022-08-21T12:37:26.792Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-21T12:37:26.792Z] [functions] Got req.url=/iot-farming-d73b7/asia-southeast1/app/user, mapping to path=/user {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/iot-farming-d73b7/asia-southeast1/app/user, mapping to path=/user"}}
+[debug] [2022-08-21T12:37:26.806Z] [runtime-status] [8308] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Ephemeral server handling POST request"}}
+[debug] [2022-08-21T12:37:26.810Z] [runtime-status] [8308] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [8308] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-08-21T12:37:27.674Z] [worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: IDLE"}}
+[debug] [2022-08-21T12:37:27.674Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-21T12:38:51.622Z] File C:\Users\HOME\Documents\Tutorial_Project\functions\controllers\UserController.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HOME\\Documents\\Tutorial_Project\\functions\\controllers\\UserController.js changed, reloading triggers"}}
+[debug] [2022-08-21T12:38:52.628Z] Validating nodejs source
+[debug] [2022-08-21T12:38:53.677Z] checkFunctionsSDKVersion encountered error:Invalid Version:  {}
+[debug] [2022-08-21T12:38:53.677Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-21T12:38:53.678Z] Building nodejs source
+[debug] [2022-08-21T12:38:53.678Z] Analyzing nodejs backend spec
+[debug] [2022-08-21T12:38:55.503Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-08-21T12:38:56.115Z] [worker-pool] Shutting down IDLE worker (asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (asia-southeast1-app)"}}
+[debug] [2022-08-21T12:38:56.115Z] [worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: FINISHING"}}
+[debug] [2022-08-21T12:38:56.129Z] [worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: exited"}}
+[debug] [2022-08-21T12:38:56.129Z] [worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-132c2f0a-b77d-4f69-9a0d-16d565314444]: FINISHED"}}
+[debug] [2022-08-21T12:38:57.657Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-08-21T12:38:57.657Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-08-21T12:38:57.657Z] Accepted request POST /iot-farming-d73b7/asia-southeast1/app/user --> asia-southeast1-app
+[debug] [2022-08-21T12:38:57.657Z] [worker-pool] Cleaned up workers for asia-southeast1-app: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for asia-southeast1-app: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-08-21T12:38:57.665Z] [worker-pool] addWorker(asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(asia-southeast1-app)"}}
+[debug] [2022-08-21T12:38:57.666Z] [worker-pool] Adding worker with key asia-southeast1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key asia-southeast1-app, total=1"}}
+[debug] [2022-08-21T12:38:57.666Z] [worker-pool] submitWork(triggerId=asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=asia-southeast1-app)"}}
+[debug] [2022-08-21T12:38:57.666Z] [worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: BUSY"}}
+[debug] [2022-08-21T12:38:59.549Z] [runtime-status] [25456] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:38:59.551Z] [runtime-status] [25456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:38:59.551Z] [runtime-status] [25456] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-08-21T12:38:59.553Z] [runtime-status] [25456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:38:59.630Z] [runtime-status] [25456] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-08-21T12:38:59.630Z] [runtime-status] [25456] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-21T12:38:59.632Z] [runtime-status] [25456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:38:59.635Z] [runtime-status] [25456] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:38:59.636Z] [runtime-status] [25456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-08-21T12:38:59.637Z] [runtime-status] [25456] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.0.1","resolution":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.0.1\",\"resolution\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-08-21T12:38:59.637Z] [runtime-status] [25456] Functions runtime initialized. {"cwd":"C:\\Users\\HOME\\Documents\\Tutorial_Project\\functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HOME\\\\Documents\\\\Tutorial_Project\\\\functions\",\"node_version\":\"16.15.1\"}"}}
+[debug] [2022-08-21T12:38:59.986Z] [runtime-status] [25456] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"iot-farming-d73b7","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2/nOGfzNpw9mJ\nI5vh49n+j3tM1gfK6ZrJLmg4PIdrFulXI8Vd0Wr5zCvAwazSsyF0Ws4B+n0+sP8V\nE7k+NgGovH6RbEjq/Oh09We0NS+GFtV/GY03xBUwcWHQJ++Fcfty3BjQIYGpdBqf\n6yR+tLqwhrcFcGzTJadwyaZh9twUMsznbH678DLgIXMLWxqnZBLJtovECGgLJMJm\nKTiD0pPtbo6AHmAJpN1vzWU5soxZIjFGhaVaEwvmJgbQCLILEIAYrltO8SefDT7c\n2QgM0zypyGDY61Rpy77kANUgLnU1OEoyAp78IUSBViDIbzPJGrir3uGN6SMvr18x\nfgDyEQh9AgMBAAECggEABQAfBcFIp4WDsfqF+2LPs1GoaXbPyyFnDx8rPDB0Yt55\n+wHk8aWmM0ZpAoW2DZB51iCy0G+ZA2oeMuQag8VBdlnLsnkLCaDUK54EjSk9whH7\nYUEuEG3DRneb2BMtArCCrV1mVMCDW68z9DGed/foVF8jLJ9ybCBg/4dw1aNV2WCL\n3yehV4ZPGHdhDNs6CwBBCxo4f70Ce04pF06QcpW/kyKDMi36m+JVNYIYR0ROawea\nNx9vGaVvHdbUhVCa15qzLeuN/KTHGI4vlNLPDd8NgTHZnRoBfb2dwa0tzBVCsSnZ\n/8IjlliWTkrklRRUra0Ps2r65iUGQqOgrwjivMIm4QKBgQDinFvsRvA0dlStko9Q\n17VQDNx9hTHFLArXXvsg23epMmRtwY5FNAGLxEUFZemq9gaJWT4hPx1KqnIoHHJs\nXS++VmowW568aMe76oD341blpYsJTXLlqTSfVB2g/NqSbLCUNdERWRRVsj/Fjj9p\noPhyIeRioZ/CLvumqb1e3opn3wKBgQDOufttKo2rRRivTTfu0p8nDo9e/ydZow2G\n6vdmEvdxYlu5ekUWUhKUrJzJAYa4UB0HriV2ZCejCDU/eipDMuKlaERtFjbtoqW3\ncrzMRDjgNijYl9v2Yp35mRtQjBm88YozDzTVH5hGiP5rkXV15eJIblAD6IpCqgJ6\n4toHYBnLIwKBgGQmfmm6IEbPVTUw5K3x52vtgzTmPMzLXi85BvvKguQAJWpsdJgZ\nF+XRZD+yfsbT3KevDUpcPnHVSoZ3rApAVO1l+6BLnaffFwbx6PWlP65Wr0/5LqJZ\nWaxg3IdduKul5ZRbBH8KQ3ZsRMrmxxfD0ImAeRMuIxEK+qT5t3vKFpk5AoGAQa4J\nWffJJv8/BoNMIA6/DhOsLYx3nh0V8SW6EK45+8Y6SkW0qZDN4nqtHZfki664anZD\n5MeRaFT1RgO0ZcFHDTKBev8x2HJyoEROA8AxKdtLQvWMp01Rz7l7Wi4JB2TeebZ9\nHLF7Gf3wh5ChdyHgsQ6LUZKSSvfk7dIhX3KC/20CgYEAuVvQrAe9pK0mlZTq2/r8\nr8Bra2fcMVlcOBX7ndotL5o0R8AqQ4tB+cOu9/a3zI5nKHegrFjs+uSxeyYuJMdw\ncyu9gNH4NrCuc6B5CXxi0sWwE72KD2OPdt0W5PKy8sqXp49pMCuCFv5htN8CpuGR\nWpltIFosRnjVsxyb27xVf0A=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-ax41n@iot-farming-d73b7.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"iot-farming-d73b7\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2/nOGfzNpw9mJ\\nI5vh49n+j3tM1gfK6ZrJLmg4PIdrFulXI8Vd0Wr5zCvAwazSsyF0Ws4B+n0+sP8V\\nE7k+NgGovH6RbEjq/Oh09We0NS+GFtV/GY03xBUwcWHQJ++Fcfty3BjQIYGpdBqf\\n6yR+tLqwhrcFcGzTJadwyaZh9twUMsznbH678DLgIXMLWxqnZBLJtovECGgLJMJm\\nKTiD0pPtbo6AHmAJpN1vzWU5soxZIjFGhaVaEwvmJgbQCLILEIAYrltO8SefDT7c\\n2QgM0zypyGDY61Rpy77kANUgLnU1OEoyAp78IUSBViDIbzPJGrir3uGN6SMvr18x\\nfgDyEQh9AgMBAAECggEABQAfBcFIp4WDsfqF+2LPs1GoaXbPyyFnDx8rPDB0Yt55\\n+wHk8aWmM0ZpAoW2DZB51iCy0G+ZA2oeMuQag8VBdlnLsnkLCaDUK54EjSk9whH7\\nYUEuEG3DRneb2BMtArCCrV1mVMCDW68z9DGed/foVF8jLJ9ybCBg/4dw1aNV2WCL\\n3yehV4ZPGHdhDNs6CwBBCxo4f70Ce04pF06QcpW/kyKDMi36m+JVNYIYR0ROawea\\nNx9vGaVvHdbUhVCa15qzLeuN/KTHGI4vlNLPDd8NgTHZnRoBfb2dwa0tzBVCsSnZ\\n/8IjlliWTkrklRRUra0Ps2r65iUGQqOgrwjivMIm4QKBgQDinFvsRvA0dlStko9Q\\n17VQDNx9hTHFLArXXvsg23epMmRtwY5FNAGLxEUFZemq9gaJWT4hPx1KqnIoHHJs\\nXS++VmowW568aMe76oD341blpYsJTXLlqTSfVB2g/NqSbLCUNdERWRRVsj/Fjj9p\\noPhyIeRioZ/CLvumqb1e3opn3wKBgQDOufttKo2rRRivTTfu0p8nDo9e/ydZow2G\\n6vdmEvdxYlu5ekUWUhKUrJzJAYa4UB0HriV2ZCejCDU/eipDMuKlaERtFjbtoqW3\\ncrzMRDjgNijYl9v2Yp35mRtQjBm88YozDzTVH5hGiP5rkXV15eJIblAD6IpCqgJ6\\n4toHYBnLIwKBgGQmfmm6IEbPVTUw5K3x52vtgzTmPMzLXi85BvvKguQAJWpsdJgZ\\nF+XRZD+yfsbT3KevDUpcPnHVSoZ3rApAVO1l+6BLnaffFwbx6PWlP65Wr0/5LqJZ\\nWaxg3IdduKul5ZRbBH8KQ3ZsRMrmxxfD0ImAeRMuIxEK+qT5t3vKFpk5AoGAQa4J\\nWffJJv8/BoNMIA6/DhOsLYx3nh0V8SW6EK45+8Y6SkW0qZDN4nqtHZfki664anZD\\n5MeRaFT1RgO0ZcFHDTKBev8x2HJyoEROA8AxKdtLQvWMp01Rz7l7Wi4JB2TeebZ9\\nHLF7Gf3wh5ChdyHgsQ6LUZKSSvfk7dIhX3KC/20CgYEAuVvQrAe9pK0mlZTq2/r8\\nr8Bra2fcMVlcOBX7ndotL5o0R8AqQ4tB+cOu9/a3zI5nKHegrFjs+uSxeyYuJMdw\\ncyu9gNH4NrCuc6B5CXxi0sWwE72KD2OPdt0W5PKy8sqXp49pMCuCFv5htN8CpuGR\\nWpltIFosRnjVsxyb27xVf0A=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-ax41n@iot-farming-d73b7.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2022-08-21T12:39:00.026Z] [runtime-status] [25456] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-08-21T12:39:00.027Z] [runtime-status] [25456] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Running app in signature http"}}
+[debug] [2022-08-21T12:39:00.033Z] [runtime-status] [25456] Listening to port: \\?\pipe\fire_emu_62b06d15ece28c0e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Listening to port: \\\\?\\pipe\\fire_emu_62b06d15ece28c0e"}}
+[debug] [2022-08-21T12:39:00.093Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-08-21T12:39:00.094Z] [functions] Got req.url=/iot-farming-d73b7/asia-southeast1/app/user, mapping to path=/user {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/iot-farming-d73b7/asia-southeast1/app/user, mapping to path=/user"}}
+[debug] [2022-08-21T12:39:00.109Z] [runtime-status] [25456] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Ephemeral server handling POST request"}}
+[debug] [2022-08-21T12:39:00.113Z] [runtime-status] [25456] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"[runtime-status] [25456] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"asia-southeast1-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-08-21T12:39:00.891Z] [worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: IDLE"}}
+[debug] [2022-08-21T12:39:00.891Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-08-21T13:16:56.608Z] File C:\Users\HOME\Documents\Tutorial_Project\functions\routes.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HOME\\Documents\\Tutorial_Project\\functions\\routes.js changed, reloading triggers"}}
+[debug] [2022-08-21T13:16:57.623Z] Validating nodejs source
+[debug] [2022-08-21T13:16:58.579Z] checkFunctionsSDKVersion encountered error:Invalid Version:  {}
+[debug] [2022-08-21T13:16:58.580Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-21T13:16:58.580Z] Building nodejs source
+[debug] [2022-08-21T13:16:58.580Z] Analyzing nodejs backend spec
+[debug] [2022-08-21T13:17:00.191Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-08-21T13:17:00.789Z] [worker-pool] Shutting down IDLE worker (asia-southeast1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (asia-southeast1-app)"}}
+[debug] [2022-08-21T13:17:00.790Z] [worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: FINISHING"}}
+[debug] [2022-08-21T13:17:00.806Z] [worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: exited"}}
+[debug] [2022-08-21T13:17:00.806Z] [worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-asia-southeast1-app-7a93bd7a-cb74-433b-ac45-b5bdbbe25712]: FINISHED"}}
+[debug] [2022-08-21T13:17:23.275Z] File C:\Users\HOME\Documents\Tutorial_Project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HOME\\Documents\\Tutorial_Project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-08-21T13:17:24.291Z] Validating nodejs source
+[debug] [2022-08-21T13:17:25.298Z] checkFunctionsSDKVersion encountered error:Invalid Version:  {}
+[debug] [2022-08-21T13:17:25.299Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-21T13:17:25.299Z] Building nodejs source
+[debug] [2022-08-21T13:17:25.299Z] Analyzing nodejs backend spec
+[debug] [2022-08-21T13:17:27.058Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-08-21T13:23:54.912Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] !  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
