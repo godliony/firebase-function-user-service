@@ -1,5 +1,5 @@
 const UserController = require('./controllers/UserController')
-
+const verifyJWT = require('./middleware/verifyJWT')
 module.exports = (app) => {
     // RESFUL Api for users management
 
@@ -12,5 +12,5 @@ module.exports = (app) => {
     // Get user by id
     app.get('/user/:userId',UserController.show)
     // Get all user
-    app.get('/users',UserController.index)
+    app.get('/users',verifyJWT,UserController.index)
 }

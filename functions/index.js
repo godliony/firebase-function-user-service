@@ -3,6 +3,7 @@ const functions = require('firebase-functions');
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
+const cookieParser = require('cookie-parser')
 let cors = require('cors');
 
 
@@ -10,11 +11,12 @@ let cors = require('cors');
 // in other words, form data:
 // 'content-type: application/x-www-form-urlencoded'
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors())
-// built-in middleware for json
+// middleware for cookies
+app.use(cookieParser());
 
 require('./routes')(app);
 
-exports.app = functions.region('asia-southeast1').https.onRequest(app);
+exports.user_service = functions.region('asia-southeast1').https.onRequest(app);
 
