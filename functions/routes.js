@@ -1,5 +1,7 @@
 const UserController = require('./controllers/UserController')
 const verifyJWT = require('./middleware/verifyJWT')
+const ROLES_LIST = require('./config/roles_list')
+const verifyRoles = require('./middleware/verifyRoles')
 module.exports = (app) => {
     // RESFUL Api for users management
 
@@ -10,7 +12,11 @@ module.exports = (app) => {
     // Delete user
     app.delete('/user/:userId',UserController.remove)
     // Get user by id
+    
     app.get('/user/:userId',UserController.show)
+    
+    //Below this line need jwtToken (Login)
+    app.use(verifyJWT) 
     // Get all user
-    app.get('/users',verifyJWT,UserController.index)
+    app.get('/users',verifyRoles(ROLES_LIST.User),UserController.index)
 }
