@@ -18,5 +18,6 @@ module.exports = (app) => {
     //Below this line need jwtToken (Login)
     app.use(verifyJWT) 
     // Get all user
-    app.get('/users',verifyRoles(ROLES_LIST.User),UserController.index)
+    //app.get('/users',verifyRoles(ROLES_LIST.User),UserController.index)
+    app.get('/users',UserController.index)
 }

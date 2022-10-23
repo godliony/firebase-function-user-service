@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser')
+const credentials = require('./middleware/credentials')
+const corsOptions = require('./config/corsOptions')
 let cors = require('cors');
 
 
@@ -12,11 +14,14 @@ let cors = require('cors');
 // 'content-type: application/x-www-form-urlencoded'
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(cors())
+
+// Handle options credentials check - before CORS!
+app.use(credentials)
+app.use(cors(corsOptions))
 // middleware for cookies
 app.use(cookieParser());
 
 require('./routes')(app);
 
-exports.user_service = functions.region('asia-southeast1').https.onRequest(app);
+exports.user_service = functions.region('asia-east2').https.onRequest(app);
 

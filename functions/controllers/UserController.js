@@ -30,7 +30,7 @@ module.exports = {
             //encrypt the password
             const hashedPwd = await bcrypt.hash(password,10);
             //store the new user
-            await User.add({"username": username, "password": hashedPwd, "refreshToken": []});
+            await User.add({"username": username, "password": hashedPwd, "refreshToken": [], "roles": {"User": 2001}});
             res.send({'success': `New user ${username} created!`})
         } catch (err) {
             res.status(500).send(err)
